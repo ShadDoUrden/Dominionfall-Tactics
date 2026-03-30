@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://b4xmb5oo3cfe4"]
+
+[ext_resource type="Script" uid="uid://yr75rg3233ht" path="res://scenes/ui/language_button.gd" id="1_3jbpd"]
+[ext_resource type="Texture2D" uid="uid://bc63gri0d3w2r" path="res://assets/ui/flags/fr.png" id="1_n2lle"]
+[ext_resource type="Texture2D" uid="uid://by5nveydlxqj2" path="res://assets/ui/flags/en.png" id="2_68lhu"]
+[ext_resource type="Texture2D" uid="uid://chdryeat7pg7b" path="res://assets/ui/flags/pt.png" id="4_pf16y"]
+[ext_resource type="Texture2D" uid="uid://bk6vifyn7wfvt" path="res://assets/ui/flags/de.png" id="6_s8nnr"]
+[ext_resource type="Texture2D" uid="uid://cb01ty8vwqo6s" path="res://assets/ui/flags/ru.png" id="8_2strv"]
+[ext_resource type="Texture2D" uid="uid://b3xbh7wunl7dx" path="res://assets/ui/flags/es.png" id="12_aoegi"]
+[ext_resource type="Script" uid="uid://deoes6ew0nyil" path="res://scripts/ui/start_button.gd" id="14_416hx"]
+[ext_resource type="Texture2D" uid="uid://cxilpsxng1xjp" path="res://assets/ui/flags/pl.png" id="14_i8hpq"]
+[ext_resource type="Texture2D" uid="uid://bo2gm6icl0hml" path="res://assets/ui/flags/it.png" id="16_n76d2"]
+[ext_resource type="Texture2D" uid="uid://saofhftq7e04" path="res://assets/ui/flags/zh.png" id="18_5six6"]
+[ext_resource type="Texture2D" uid="uid://yh5sk0dlqkl5" path="res://assets/ui/flags/hi.png" id="20_14i16"]
+[ext_resource type="Texture2D" uid="uid://crqd2ebkwiyn6" path="res://assets/ui/flags/ko.png" id="22_7icg0"]
+[ext_resource type="Texture2D" uid="uid://b57qbk6srxx6s" path="res://assets/ui/flags/ja.png" id="24_qtbap"]
+
+[node name="LangSelect" type="Control" unique_id=1624059101]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Background" type="ColorRect" parent="." unique_id=397111189]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 1)
+
+[node name="MainLayout" type="VBoxContainer" parent="." unique_id=491792764]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Title" type="Label" parent="MainLayout" unique_id=1456293758]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "menu.language"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MainLayout" unique_id=108772296]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="LanguageListVBox" type="VBoxContainer" parent="MainLayout/ScrollContainer" unique_id=1783964660]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button_EN" type="Button" parent="MainLayout/ScrollContainer/LanguageListVBox" unique_id=1232587446]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+script = ExtResource("1_3jbpd")
+flag_icon = ExtResource("2_68lhu")
+
+[node name="Button_FR" type="Button" parent="MainLayout/ScrollContainer/LanguageListVBox" unique_id=143575093]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+script = ExtResource("1_3jbpd")
+lang_code = "fr"
+display_name = "Français"
+flag_icon = ExtResource("1_n2lle")
+
+[node name="Button_PT" type="Button" parent="MainLayout/ScrollContainer/LanguageListVBox" unique_id=2071091299]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+script = ExtResource("1_3jbpd")
+lang_code = "pt"
+display_name = "Português"
+flag_icon = ExtResource("4_pf16y")
+
+[node name="Button_DE" type="Button" parent="MainLayout/ScrollContainer/LanguageListVBox" unique_id=1911097314]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+script = ExtResource("1_3jbpd")
+lang_code = "de"
+display_name = "Deutsch"
+flag_icon = ExtResource("6_s8nnr")
+
+[node name="Button_RU" type="Button" parent="MainLayout/ScrollContainer/LanguageListVBox" unique_id=1572531134]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+script = ExtResource("1_3jbpd")
+lang_code = "ru"
+display_name = "Русский"
+flag_icon = ExtResource("8_2strv")
+
+[node name="Button_ES" type="Button" parent="MainLayout/ScrollContainer/LanguageListVBox" unique_id=153043956]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+script = ExtResource("1_3jbpd")
+lang_code = "es"
+display_name = "Español"
+flag_icon = ExtResource("12_aoegi")
+
+[node name="Button_PL" type="Button" parent="MainLayout/ScrollContainer/LanguageListVBox" unique_id=1076600894]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+script = ExtResource("1_3jbpd")
+lang_code = "pl"
+display_name = "Polski"
+flag_icon = ExtResource("14_i8hpq")
+
+[node name="Button_IT" type="Button" parent="MainLayout/ScrollContainer/LanguageListVBox" unique_id=1993417195]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+script = ExtResource("1_3jbpd")
+lang_code = "it"
+display_name = "Italiano"
+flag_icon = ExtResource("16_n76d2")
+
+[node name="Button_ZH" type="Button" parent="MainLayout/ScrollContainer/LanguageListVBox" unique_id=1796968882]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+script = ExtResource("1_3jbpd")
+lang_code = "zh"
+display_name = "中文"
+flag_icon = ExtResource("18_5six6")
+
+[node name="Button_HI" type="Button" parent="MainLayout/ScrollContainer/LanguageListVBox" unique_id=835987607]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+script = ExtResource("1_3jbpd")
+lang_code = "hi"
+display_name = "हिन्दी"
+flag_icon = ExtResource("20_14i16")
+
+[node name="Button_KO" type="Button" parent="MainLayout/ScrollContainer/LanguageListVBox" unique_id=424264514]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+script = ExtResource("1_3jbpd")
+lang_code = "ko"
+display_name = "한국어"
+flag_icon = ExtResource("22_7icg0")
+
+[node name="Button_JA" type="Button" parent="MainLayout/ScrollContainer/LanguageListVBox" unique_id=897691048]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+script = ExtResource("1_3jbpd")
+lang_code = "ja"
+display_name = "日本語"
+flag_icon = ExtResource("24_qtbap")
+
+[node name="StartButton" type="Button" parent="MainLayout" unique_id=330955132]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "menu.start"
+script = ExtResource("14_416hx")

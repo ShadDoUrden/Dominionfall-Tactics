@@ -1,0 +1,70 @@
+[gd_scene load_steps=2 format=3 uid="uid://xb8nwtt1c1a5"]
+
+[ext_resource type="Script" path="res://scripts/ui/main_menu.gd" id="1_script"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MainLayout" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 50.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="Title" type="Label" parent="MainLayout"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "GAME TITLE"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="MainLayout"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Campaign" type="Button" parent="MainLayout"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "menu.campaign"
+
+[node name="VSMode" type="Button" parent="MainLayout"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "menu.vs_mode"
+
+[node name="MapEditor" type="Button" parent="MainLayout"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "menu.map_editor"
+
+[node name="Settings" type="Button" parent="MainLayout"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "menu.settings"
+
+[node name="Quit" type="Button" parent="MainLayout"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "menu.quit"

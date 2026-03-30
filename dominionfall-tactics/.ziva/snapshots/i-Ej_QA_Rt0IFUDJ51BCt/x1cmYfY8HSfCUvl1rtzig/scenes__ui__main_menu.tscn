@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://xb8nwtt1c1a5"]
+
+[ext_resource type="Script" uid="uid://cpq5jxr4kmrmk" path="res://scripts/ui/main_menu.gd" id="1_script"]
+
+[node name="MainMenu" type="Control" unique_id=1547964756]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="." unique_id=752832599]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainLayout" type="VBoxContainer" parent="." unique_id=1003917325]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="Title" type="Label" parent="MainLayout" unique_id=941086512]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Dominionfall Tactics"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="MainLayout" unique_id=1170948358]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MainLayout" unique_id=1723387802]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ButtonsVBox" type="VBoxContainer" parent="MainLayout/ScrollContainer" unique_id=613177575]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Campaign" type="Button" parent="MainLayout/ScrollContainer/ButtonsVBox" unique_id=177356514]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "menu.campaign"
+
+[node name="VSMode" type="Button" parent="MainLayout/ScrollContainer/ButtonsVBox" unique_id=527417736]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "menu.vs_mode"
+
+[node name="MapEditor" type="Button" parent="MainLayout/ScrollContainer/ButtonsVBox" unique_id=2091435681]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "menu.map_editor"
+
+[node name="Settings" type="Button" parent="MainLayout/ScrollContainer/ButtonsVBox" unique_id=400582269]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "menu.settings"
+
+[node name="Quit" type="Button" parent="MainLayout/ScrollContainer/ButtonsVBox" unique_id=1783717229]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "menu.quit"

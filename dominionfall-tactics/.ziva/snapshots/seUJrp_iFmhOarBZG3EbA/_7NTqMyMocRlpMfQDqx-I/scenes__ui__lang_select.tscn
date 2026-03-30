@@ -1,0 +1,330 @@
+[gd_scene load_steps=16 format=3 uid="uid://b4xmb5oo3cfe4"]
+
+[ext_resource type="Script" uid="uid://yr75rg3233ht" path="res://scenes/ui/language_button.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://by5nveydlxqj2" path="res://assets/ui/flags/en.png" id="2_en"]
+[ext_resource type="Texture2D" uid="uid://bc63gri0d3w2r" path="res://assets/ui/flags/fr.png" id="3_fr"]
+[ext_resource type="Texture2D" uid="uid://chdryeat7pg7b" path="res://assets/ui/flags/pt.png" id="4_pt"]
+[ext_resource type="Texture2D" uid="uid://bk6vifyn7wfvt" path="res://assets/ui/flags/de.png" id="5_de"]
+[ext_resource type="Texture2D" uid="uid://cb01ty8vwqo6s" path="res://assets/ui/flags/ru.png" id="6_ru"]
+[ext_resource type="Texture2D" uid="uid://b3xbh7wunl7dx" path="res://assets/ui/flags/es.png" id="7_es"]
+[ext_resource type="Texture2D" uid="uid://cxilpsxng1xjp" path="res://assets/ui/flags/pl.png" id="8_pl"]
+[ext_resource type="Texture2D" uid="uid://bo2gm6icl0hml" path="res://assets/ui/flags/it.png" id="9_it"]
+[ext_resource type="Texture2D" uid="uid://saofhftq7e04" path="res://assets/ui/flags/zh.png" id="10_zh"]
+[ext_resource type="Texture2D" uid="uid://yh5sk0dlqkl5" path="res://assets/ui/flags/hi.png" id="11_hi"]
+[ext_resource type="Texture2D" uid="uid://crqd2ebkwiyn6" path="res://assets/ui/flags/ko.png" id="12_ko"]
+[ext_resource type="Texture2D" uid="uid://b57qbk6srxx6s" path="res://assets/ui/flags/ja.png" id="13_ja"]
+[ext_resource type="Script" path="res://scripts/ui/start_button.gd" id="14_start"]
+
+[node name="LangSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MainLayout" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="MainLayout"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "menu.language"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="MainLayout"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="LanguageList" type="VBoxContainer" parent="MainLayout/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="Button_EN" type="Button" parent="MainLayout/Scroll/LanguageList"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "English"
+script = ExtResource("1_script")
+
+[node name="Icon" type="TextureRect" parent="MainLayout/Scroll/LanguageList/Button_EN"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 34.0
+offset_bottom = 12.0
+grow_vertical = 2
+texture = ExtResource("2_en")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button_FR" type="Button" parent="MainLayout/Scroll/LanguageList"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Français"
+script = ExtResource("1_script")
+lang_code = "fr"
+display_name = "Français"
+
+[node name="Icon" type="TextureRect" parent="MainLayout/Scroll/LanguageList/Button_FR"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 34.0
+offset_bottom = 12.0
+grow_vertical = 2
+texture = ExtResource("3_fr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button_PT" type="Button" parent="MainLayout/Scroll/LanguageList"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Português"
+script = ExtResource("1_script")
+lang_code = "pt"
+display_name = "Português"
+
+[node name="Icon" type="TextureRect" parent="MainLayout/Scroll/LanguageList/Button_PT"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 34.0
+offset_bottom = 12.0
+grow_vertical = 2
+texture = ExtResource("4_pt")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button_DE" type="Button" parent="MainLayout/Scroll/LanguageList"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Deutsch"
+script = ExtResource("1_script")
+lang_code = "de"
+display_name = "Deutsch"
+
+[node name="Icon" type="TextureRect" parent="MainLayout/Scroll/LanguageList/Button_DE"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 34.0
+offset_bottom = 12.0
+grow_vertical = 2
+texture = ExtResource("5_de")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button_RU" type="Button" parent="MainLayout/Scroll/LanguageList"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Русский"
+script = ExtResource("1_script")
+lang_code = "ru"
+display_name = "Русский"
+
+[node name="Icon" type="TextureRect" parent="MainLayout/Scroll/LanguageList/Button_RU"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 34.0
+offset_bottom = 12.0
+grow_vertical = 2
+texture = ExtResource("6_ru")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button_ES" type="Button" parent="MainLayout/Scroll/LanguageList"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Español"
+script = ExtResource("1_script")
+lang_code = "es"
+display_name = "Español"
+
+[node name="Icon" type="TextureRect" parent="MainLayout/Scroll/LanguageList/Button_ES"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 34.0
+offset_bottom = 12.0
+grow_vertical = 2
+texture = ExtResource("7_es")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button_PL" type="Button" parent="MainLayout/Scroll/LanguageList"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Polski"
+script = ExtResource("1_script")
+lang_code = "pl"
+display_name = "Polski"
+
+[node name="Icon" type="TextureRect" parent="MainLayout/Scroll/LanguageList/Button_PL"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 34.0
+offset_bottom = 12.0
+grow_vertical = 2
+texture = ExtResource("8_pl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button_IT" type="Button" parent="MainLayout/Scroll/LanguageList"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Italiano"
+script = ExtResource("1_script")
+lang_code = "it"
+display_name = "Italiano"
+
+[node name="Icon" type="TextureRect" parent="MainLayout/Scroll/LanguageList/Button_IT"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 34.0
+offset_bottom = 12.0
+grow_vertical = 2
+texture = ExtResource("9_it")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button_ZH" type="Button" parent="MainLayout/Scroll/LanguageList"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "中文"
+script = ExtResource("1_script")
+lang_code = "zh"
+display_name = "中文"
+
+[node name="Icon" type="TextureRect" parent="MainLayout/Scroll/LanguageList/Button_ZH"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 34.0
+offset_bottom = 12.0
+grow_vertical = 2
+texture = ExtResource("10_zh")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button_HI" type="Button" parent="MainLayout/Scroll/LanguageList"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "हिन्दी"
+script = ExtResource("1_script")
+lang_code = "hi"
+display_name = "हिन्दी"
+
+[node name="Icon" type="TextureRect" parent="MainLayout/Scroll/LanguageList/Button_HI"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 34.0
+offset_bottom = 12.0
+grow_vertical = 2
+texture = ExtResource("11_hi")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button_KO" type="Button" parent="MainLayout/Scroll/LanguageList"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "한국어"
+script = ExtResource("1_script")
+lang_code = "ko"
+display_name = "한국어"
+
+[node name="Icon" type="TextureRect" parent="MainLayout/Scroll/LanguageList/Button_KO"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 34.0
+offset_bottom = 12.0
+grow_vertical = 2
+texture = ExtResource("12_ko")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button_JA" type="Button" parent="MainLayout/Scroll/LanguageList"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "日本語"
+script = ExtResource("1_script")
+lang_code = "ja"
+display_name = "日本語"
+
+[node name="Icon" type="TextureRect" parent="MainLayout/Scroll/LanguageList/Button_JA"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 34.0
+offset_bottom = 12.0
+grow_vertical = 2
+texture = ExtResource("13_ja")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StartButton" type="Button" parent="MainLayout"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "menu.start"
+script = ExtResource("14_start")

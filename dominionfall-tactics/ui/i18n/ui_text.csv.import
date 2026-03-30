@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://ew6w8beig8v2"
+
+[deps]
+
+files=["res://ui/i18n/ui_text.en.translation", "res://ui/i18n/ui_text.pt.translation", "res://ui/i18n/ui_text.de.translation", "res://ui/i18n/ui_text.ru.translation", "res://ui/i18n/ui_text.fr.translation", "res://ui/i18n/ui_text.es.translation", "res://ui/i18n/ui_text.pl.translation", "res://ui/i18n/ui_text.it.translation", "res://ui/i18n/ui_text.zh.translation", "res://ui/i18n/ui_text.hi.translation", "res://ui/i18n/ui_text.ko.translation", "res://ui/i18n/ui_text.ja.translation"]
+
+source_file="res://ui/i18n/ui_text.csv"
+dest_files=["res://ui/i18n/ui_text.en.translation", "res://ui/i18n/ui_text.pt.translation", "res://ui/i18n/ui_text.de.translation", "res://ui/i18n/ui_text.ru.translation", "res://ui/i18n/ui_text.fr.translation", "res://ui/i18n/ui_text.es.translation", "res://ui/i18n/ui_text.pl.translation", "res://ui/i18n/ui_text.it.translation", "res://ui/i18n/ui_text.zh.translation", "res://ui/i18n/ui_text.hi.translation", "res://ui/i18n/ui_text.ko.translation", "res://ui/i18n/ui_text.ja.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

@@ -1,0 +1,262 @@
+[gd_scene format=3 uid="uid://b4xmb5oo3cfe4"]
+
+[ext_resource type="Script" uid="uid://tjfov0q7hd3l" path="res://scenes/ui/button_br.gd" id="1_haass"]
+[ext_resource type="Texture2D" uid="uid://bc63gri0d3w2r" path="res://assets/ui/flags/fr.png" id="1_n2lle"]
+[ext_resource type="Script" uid="uid://bx6bv25jjslq7" path="res://scenes/ui/button_de.gd" id="2_03kuh"]
+[ext_resource type="Texture2D" uid="uid://by5nveydlxqj2" path="res://assets/ui/flags/en.png" id="2_68lhu"]
+[ext_resource type="Script" uid="uid://jsp7ygjupe0e" path="res://scenes/ui/button_ru.gd" id="3_b52od"]
+[ext_resource type="Script" uid="uid://bxvm3icem53hd" path="res://scenes/ui/button_fr.gd" id="4_dga88"]
+[ext_resource type="Texture2D" uid="uid://chdryeat7pg7b" path="res://assets/ui/flags/pt.png" id="4_pf16y"]
+[ext_resource type="Texture2D" uid="uid://bk6vifyn7wfvt" path="res://assets/ui/flags/de.png" id="6_s8nnr"]
+[ext_resource type="Script" uid="uid://wykw634gpbfn" path="res://scenes/ui/button_es.gd" id="6_yfw6n"]
+[ext_resource type="Script" uid="uid://wwwwlpsah5a" path="res://scenes/ui/button_pl.gd" id="7_cd8f4"]
+[ext_resource type="Texture2D" uid="uid://cb01ty8vwqo6s" path="res://assets/ui/flags/ru.png" id="8_2strv"]
+[ext_resource type="Script" uid="uid://cd7475ex3j447" path="res://scenes/ui/button_it.gd" id="8_50bc7"]
+[ext_resource type="Script" uid="uid://b7auoce4qrdw0" path="res://scenes/ui/button_cn.gd" id="9_pipbt"]
+[ext_resource type="Script" uid="uid://bqxolwu7c0kf6" path="res://scenes/ui/button_in.gd" id="10_h8jn8"]
+[ext_resource type="Script" uid="uid://b2h2u8b43w1uo" path="res://scenes/ui/button_kr.gd" id="11_888k0"]
+[ext_resource type="Script" uid="uid://bvnb4n4jppvel" path="res://scenes/ui/button_jp.gd" id="12_2ghgs"]
+[ext_resource type="Texture2D" uid="uid://b3xbh7wunl7dx" path="res://assets/ui/flags/es.png" id="12_aoegi"]
+[ext_resource type="Script" uid="uid://djq4cwvevlug1" path="res://scenes/ui/button_us.gd" id="13_2cu71"]
+[ext_resource type="Texture2D" uid="uid://cxilpsxng1xjp" path="res://assets/ui/flags/pl.png" id="14_i8hpq"]
+[ext_resource type="Texture2D" uid="uid://bo2gm6icl0hml" path="res://assets/ui/flags/it.png" id="16_n76d2"]
+[ext_resource type="Texture2D" uid="uid://saofhftq7e04" path="res://assets/ui/flags/zh.png" id="18_5six6"]
+[ext_resource type="Texture2D" uid="uid://yh5sk0dlqkl5" path="res://assets/ui/flags/hi.png" id="20_14i16"]
+[ext_resource type="Texture2D" uid="uid://crqd2ebkwiyn6" path="res://assets/ui/flags/ko.png" id="22_7icg0"]
+[ext_resource type="Texture2D" uid="uid://b57qbk6srxx6s" path="res://assets/ui/flags/ja.png" id="24_qtbap"]
+
+[node name="LangSelect" type="Control" unique_id=1624059101]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 463.0
+offset_top = 111.0
+offset_right = 503.0
+offset_bottom = 151.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Root" type="CenterContainer" parent="." unique_id=1413793132]
+layout_mode = 0
+offset_top = -31.0
+offset_right = 119.0
+offset_bottom = 9.0
+
+[node name="LanguageList" type="VBoxContainer" parent="Root" unique_id=937768443]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Button_EN" type="Button" parent="Root/LanguageList" unique_id=101668710]
+layout_mode = 2
+text = "English"
+script = ExtResource("13_2cu71")
+
+[node name="TextureRect" type="TextureRect" parent="Root/LanguageList/Button_EN" unique_id=291553441]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060000002
+anchor_top = 0.172
+anchor_right = -0.060000002
+anchor_bottom = 0.172
+offset_left = -12.28
+offset_top = 1.6679997
+offset_right = 3.7200003
+offset_bottom = 17.668
+texture = ExtResource("2_68lhu")
+
+[node name="Button_PT" type="Button" parent="Root/LanguageList" unique_id=767919789]
+layout_mode = 2
+text = "Brasil"
+script = ExtResource("1_haass")
+
+[node name="TextureRect" type="TextureRect" parent="Root/LanguageList/Button_PT" unique_id=283276270]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060000002
+anchor_top = 0.172
+anchor_right = -0.060000002
+anchor_bottom = 0.172
+offset_left = -12.28
+offset_top = 1.6679997
+offset_right = 3.7200003
+offset_bottom = 17.668
+texture = ExtResource("4_pf16y")
+
+[node name="Button_DE" type="Button" parent="Root/LanguageList" unique_id=2100432699]
+layout_mode = 2
+text = "Deutchland"
+script = ExtResource("2_03kuh")
+
+[node name="TextureRect" type="TextureRect" parent="Root/LanguageList/Button_DE" unique_id=1107375526]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060000002
+anchor_top = 0.172
+anchor_right = -0.060000002
+anchor_bottom = 0.172
+offset_left = -12.28
+offset_top = 1.6679997
+offset_right = 3.7200003
+offset_bottom = 17.668
+texture = ExtResource("6_s8nnr")
+
+[node name="Button_RU" type="Button" parent="Root/LanguageList" unique_id=1148734011]
+layout_mode = 2
+text = "Pоссия"
+script = ExtResource("3_b52od")
+
+[node name="TextureRect" type="TextureRect" parent="Root/LanguageList/Button_RU" unique_id=1743658787]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060000002
+anchor_top = 0.172
+anchor_right = -0.060000002
+anchor_bottom = 0.172
+offset_left = -12.28
+offset_top = 1.6679997
+offset_right = 3.7200003
+offset_bottom = 17.668
+texture = ExtResource("8_2strv")
+
+[node name="Button_FR" type="Button" parent="Root/LanguageList" unique_id=1375205071]
+layout_mode = 2
+text = "France"
+script = ExtResource("4_dga88")
+
+[node name="TextureRect" type="TextureRect" parent="Root/LanguageList/Button_FR" unique_id=1738151826]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060000002
+anchor_top = 0.172
+anchor_right = -0.060000002
+anchor_bottom = 0.172
+offset_left = -12.28
+offset_top = 1.6679997
+offset_right = 3.7200003
+offset_bottom = 17.668
+texture = ExtResource("1_n2lle")
+
+[node name="Button_ES" type="Button" parent="Root/LanguageList" unique_id=2073343977]
+layout_mode = 2
+text = "España"
+script = ExtResource("6_yfw6n")
+
+[node name="TextureRect" type="TextureRect" parent="Root/LanguageList/Button_ES" unique_id=1636698507]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060000002
+anchor_top = 0.172
+anchor_right = -0.060000002
+anchor_bottom = 0.172
+offset_left = -12.28
+offset_top = 1.6679997
+offset_right = 3.7200003
+offset_bottom = 17.668
+texture = ExtResource("12_aoegi")
+
+[node name="Button_PL" type="Button" parent="Root/LanguageList" unique_id=1159144683]
+layout_mode = 2
+text = "Polska"
+script = ExtResource("7_cd8f4")
+
+[node name="TextureRect" type="TextureRect" parent="Root/LanguageList/Button_PL" unique_id=119010703]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060000002
+anchor_top = 0.172
+anchor_right = -0.060000002
+anchor_bottom = 0.172
+offset_left = -12.28
+offset_top = 1.6679997
+offset_right = 3.7200003
+offset_bottom = 17.668
+texture = ExtResource("14_i8hpq")
+
+[node name="Button_IT" type="Button" parent="Root/LanguageList" unique_id=68919181]
+layout_mode = 2
+text = "Italia"
+script = ExtResource("8_50bc7")
+
+[node name="TextureRect" type="TextureRect" parent="Root/LanguageList/Button_IT" unique_id=733850134]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060000002
+anchor_top = 0.172
+anchor_right = -0.060000002
+anchor_bottom = 0.172
+offset_left = -12.28
+offset_top = 1.6679997
+offset_right = 3.7200003
+offset_bottom = 17.668
+texture = ExtResource("16_n76d2")
+
+[node name="Button_ZH" type="Button" parent="Root/LanguageList" unique_id=625888028]
+layout_mode = 2
+text = "中国"
+script = ExtResource("9_pipbt")
+
+[node name="TextureRect" type="TextureRect" parent="Root/LanguageList/Button_ZH" unique_id=1616828499]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060000002
+anchor_top = 0.172
+anchor_right = -0.060000002
+anchor_bottom = 0.172
+offset_left = -12.28
+offset_top = 1.6679997
+offset_right = 3.7200003
+offset_bottom = 17.668
+texture = ExtResource("18_5six6")
+
+[node name="Button_HI" type="Button" parent="Root/LanguageList" unique_id=717456870]
+layout_mode = 2
+text = "भारत"
+script = ExtResource("10_h8jn8")
+
+[node name="TextureRect" type="TextureRect" parent="Root/LanguageList/Button_HI" unique_id=655037738]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060000002
+anchor_top = 0.172
+anchor_right = -0.060000002
+anchor_bottom = 0.172
+offset_left = -12.28
+offset_top = 1.6679997
+offset_right = 3.7200003
+offset_bottom = 17.668
+texture = ExtResource("20_14i16")
+
+[node name="Button_KO" type="Button" parent="Root/LanguageList" unique_id=1970881087]
+layout_mode = 2
+text = "대한민국"
+script = ExtResource("11_888k0")
+
+[node name="TextureRect" type="TextureRect" parent="Root/LanguageList/Button_KO" unique_id=436974807]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060000002
+anchor_top = 0.172
+anchor_right = -0.060000002
+anchor_bottom = 0.172
+offset_left = -12.28
+offset_top = 1.6679997
+offset_right = 3.7200003
+offset_bottom = 17.668
+texture = ExtResource("22_7icg0")
+
+[node name="Button_JA" type="Button" parent="Root/LanguageList" unique_id=926348033]
+layout_mode = 2
+text = "日本"
+script = ExtResource("12_2ghgs")
+
+[node name="TextureRect" type="TextureRect" parent="Root/LanguageList/Button_JA" unique_id=2089946669]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.060000002
+anchor_top = 0.172
+anchor_right = -0.060000002
+anchor_bottom = 0.172
+offset_left = -12.28
+offset_top = 1.6679997
+offset_right = 3.7200003
+offset_bottom = 17.668
+texture = ExtResource("24_qtbap")

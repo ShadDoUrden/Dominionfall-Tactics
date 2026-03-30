@@ -1,0 +1,40 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Dominionfall_Tactics"
+run/main_scene="res://scenes/ui/lang_select.tscn"
+config/features=PackedStringArray("4.6", "Mobile")
+config/icon="res://icon.svg"
+
+[autoload]
+
+I18nManager="*uid://d1bl6q77gdv3o"
+
+[display]
+
+window/size/viewport_width=1280.0
+window/size/viewport_height=720.0
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[internationalization]
+
+locale/translations="res://ui/i18n/ui_text.de.translation,res://ui/i18n/ui_text.en.translation,res://ui/i18n/ui_text.es.translation,res://ui/i18n/ui_text.fr.translation,res://ui/i18n/ui_text.hi.translation,res://ui/i18n/ui_text.it.translation,res://ui/i18n/ui_text.ja.translation,res://ui/i18n/ui_text.ko.translation,res://ui/i18n/ui_text.pl.translation,res://ui/i18n/ui_text.pt.translation,res://ui/i18n/ui_text.ru.translation,res://ui/i18n/ui_text.zh.translation"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"

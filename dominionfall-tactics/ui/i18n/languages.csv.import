@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dgiv14vwlqsqf"
+
+[deps]
+
+files=["res://ui/i18n/languages.display.translation", "res://ui/i18n/languages.native.translation", "res://ui/i18n/languages.short.translation", "res://ui/i18n/languages.translation.translation", "res://ui/i18n/languages.flag.translation", "res://ui/i18n/languages.rtl.translation", "res://ui/i18n/languages.enabled.translation", "res://ui/i18n/languages.priority.translation"]
+
+source_file="res://ui/i18n/languages.csv"
+dest_files=["res://ui/i18n/languages.display.translation", "res://ui/i18n/languages.native.translation", "res://ui/i18n/languages.short.translation", "res://ui/i18n/languages.translation.translation", "res://ui/i18n/languages.flag.translation", "res://ui/i18n/languages.rtl.translation", "res://ui/i18n/languages.enabled.translation", "res://ui/i18n/languages.priority.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

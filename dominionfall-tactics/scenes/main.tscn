@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://bjws5xxohwdxc"]
+
+[ext_resource type="Script" uid="uid://yr75rg3233ht" path="res://scenes/ui/language_button.gd" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://deoes6ew0nyil" path="res://scripts/ui/start_button.gd" id="1_o5qli"]
+
+[node name="main" type="Node2D" unique_id=74479867]
+
+[node name="Background" type="ColorRect" parent="." unique_id=429093157]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 1)
+
+[node name="MainLayout" type="VBoxContainer" parent="." unique_id=1479754975]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+
+[node name="Title" type="Label" parent="MainLayout" unique_id=1369957701]
+layout_mode = 2
+text = "menu.language"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="MainLayout" unique_id=1031540182]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LanguageList" type="VBoxContainer" parent="MainLayout/Scroll" unique_id=304362991]
+layout_mode = 2
+
+[node name="Button_FR" type="Button" parent="MainLayout/Scroll/LanguageList" unique_id=652630534]
+layout_mode = 2
+script = ExtResource("1_0wfyh")
+lang_code = "fr"
+display_name = "Français"
+
+[node name="Button_EN" type="Button" parent="MainLayout/Scroll/LanguageList" unique_id=1062241297]
+layout_mode = 2
+script = ExtResource("1_0wfyh")
+
+[node name="Button_PT" type="Button" parent="MainLayout/Scroll/LanguageList" unique_id=1876556074]
+layout_mode = 2
+script = ExtResource("1_0wfyh")
+lang_code = "pt"
+display_name = "Português"
+
+[node name="Button_DE" type="Button" parent="MainLayout/Scroll/LanguageList" unique_id=473036363]
+layout_mode = 2
+script = ExtResource("1_0wfyh")
+lang_code = "de"
+display_name = "Deutsch"
+
+[node name="Button_RU" type="Button" parent="MainLayout/Scroll/LanguageList" unique_id=784049816]
+layout_mode = 2
+script = ExtResource("1_0wfyh")
+lang_code = "ru"
+display_name = "Русский"
+
+[node name="Button_ES" type="Button" parent="MainLayout/Scroll/LanguageList" unique_id=359637930]
+layout_mode = 2
+script = ExtResource("1_0wfyh")
+lang_code = "es"
+display_name = "Español"
+
+[node name="Button_PL" type="Button" parent="MainLayout/Scroll/LanguageList" unique_id=975764180]
+layout_mode = 2
+script = ExtResource("1_0wfyh")
+lang_code = "pl"
+display_name = "Polski"
+
+[node name="Button_IT" type="Button" parent="MainLayout/Scroll/LanguageList" unique_id=500979413]
+layout_mode = 2
+script = ExtResource("1_0wfyh")
+lang_code = "it"
+display_name = "Italiano"
+
+[node name="Button_ZH" type="Button" parent="MainLayout/Scroll/LanguageList" unique_id=1906851227]
+layout_mode = 2
+script = ExtResource("1_0wfyh")
+lang_code = "zh"
+display_name = "中文"
+
+[node name="Button_HI" type="Button" parent="MainLayout/Scroll/LanguageList" unique_id=921326650]
+layout_mode = 2
+script = ExtResource("1_0wfyh")
+lang_code = "hi"
+display_name = "हिन्दी"
+
+[node name="Button_KO" type="Button" parent="MainLayout/Scroll/LanguageList" unique_id=1688607600]
+layout_mode = 2
+script = ExtResource("1_0wfyh")
+lang_code = "ko"
+display_name = "한국어"
+
+[node name="Button_JA" type="Button" parent="MainLayout/Scroll/LanguageList" unique_id=527713077]
+layout_mode = 2
+script = ExtResource("1_0wfyh")
+lang_code = "ja"
+display_name = "日本語"
+
+[node name="StartButton" type="Button" parent="MainLayout" unique_id=1991911866]
+layout_mode = 2
+text = "menu.start"
+script = ExtResource("1_o5qli")
