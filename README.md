@@ -128,6 +128,6 @@ If you use these resources and your project becomes profitable, you can support 
 
 
 <p align="center">
-  <img src="./dominionfall-tactics/Assets/ShadDoUrden_signature.png" alt="ShadDoUrden" style="max-width:100%;width:560px;">
+  <img src="./dominionfall-tactics/assets/ShadDoUrden_signature.png" alt="ShadDoUrden" style="max-width:100%;width:560px;">
 </p>
 
